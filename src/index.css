@@ -1,0 +1,37 @@
+@font-face {
+    font-family: NeueMachina-light;
+    src: url('assets/font/NeueMachina-Light.otf');
+}
+@font-face {
+    font-family: NeueMachina-regular;
+    src: url('assets/font/NeueMachina-Regular.otf');
+}
+@font-face {
+    font-family: NeueMachina-ultrabold;
+    src: url('assets/font/NeueMachina-Ultrabold.otf');
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url('assets/font/POPPINS-REGULAR.TTF');
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url('assets/font/POPPINS-SEMIBOLD.TTF');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: var(--semibold-font);
+}
+
+:root{
+    --regular-font: NeueMachina-regular;
+    --light-font: NeueMachina-regular;
+    --ultrabold-font: NeueMachina-ultrabold;
+    --second-regular-font: poppins-regular;
+    --semibold-font: poppins-semibold;
+}

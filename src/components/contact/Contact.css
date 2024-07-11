@@ -1,0 +1,106 @@
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #00ccff, #012196);
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background: linear-gradient(90deg, #0400ff,#00ffff);
+        border-radius: 50%;
+        left: -10%;
+        top: -20%;
+        filter: blur(90px);
+    }
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background: linear-gradient(90deg, #ff00c8,#2600ff);
+        border-radius: 50%;
+        right: -10%;
+        bottom: -20%;
+        filter: blur(90px);
+    }
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    z-index: 1001;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0000001a;
+    margin: 25px;
+    transition: .3s;
+}
+
+form h2{
+    font-family: var(--ultrabold-font);
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+}
+
+form .input-box{
+    margin-top: 20px;
+    font-family: var(--second-regular-font);
+    color: #333;
+}
+
+form .input-box .field{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    font-family: var(--second-regular-font);
+}
+
+form .input-box .field.mess{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    font-family: var(--second-regular-font);
+}
+
+form button{
+    margin-top: 25px;
+    width: 100%;
+    height: 55px;
+    background: #0400ff;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    font-family: var(--semibold-font);
+    cursor: pointer;
+    transition: .3s;
+}
+
+form button:hover{
+    background: none;
+    border: 2px solid #0400ff;
+    color: #0400ff;
+}
